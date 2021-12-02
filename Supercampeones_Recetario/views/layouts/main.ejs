@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= typeof title != 'undefined' ? title: 'Recetario Supercampeones' %></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  
+  <div class="container-xxl px-md-5  ">
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="d-flex flex-grow-1">
+          <span class="w-100 d-lg-none d-block">
+          </span>
+          <a class="navbar-brand" href="/">Inicio</a>
+          <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+              <img src="https://i.ibb.co/pRMP9Vp/logo.png" alt="logo" width="60" height="60">
+          </a>
+          <div class="w-100 text-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+      </div>
+      <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item">
+                  <a class="nav-link" href="/submit-recipe">Crear Receta</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link" href="/recipes">Recetas</a> </li>
+
+            <li class="nav-item"><a class="nav-link" href="/login">Login</a></li> 
+
+            <li class="nav-item"> <a class="nav-link" href="/register">Register</a> </li> 
+
+              <li class="nav-item">
+                  <a class="nav-link active" href="#">Logout</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+    <main>
+      <%- body -%>
+    </main>
+
+    <footer>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 text-center" >
+            <h3 style = "color: rgba(138,75,56,255) " ><br>Sobre nosotros</h3> 
+            <div class="footer-about"><br>
+              "Somos estudiantes del Iteso, los cuales estamos buscando el cómo mejorar nuestras habilidades 
+              como programadores de páginas web, creemos que el esfuerzo es herramienta básica para el buen 
+              rendimiento en equipo. Esperemos disfruten las características añadidas a la página como nosotros."<br>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 text-center"><br>
+            <img src="https://i.ibb.co/C0KfXVQ/logotexto.png" alt="logo" width="200" height="200"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>

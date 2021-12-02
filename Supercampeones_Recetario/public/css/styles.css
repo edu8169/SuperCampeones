@@ -1,0 +1,146 @@
+:root {
+  --bs-font-sans-serif: 'Montserrat', sans-serif;
+}
+
+.container-xxl { max-width: 1530px; }
+
+  .edit-button {
+	box-shadow:inset 0px 1px 3px 0px #9aaca9;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.edit-button:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.edit-button:active {
+	position:relative;
+	top:1px;
+}
+
+.delete-button {
+	box-shadow:inset 0px 1px 3px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:5px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.delete-button:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.delete-button:active {
+	position:relative;
+	top:1px;
+}
+
+body {
+  background-color: white;
+  color: #666;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.50;
+  overflow-x: hidden;
+}
+
+a { color: var(--bs-dark); }
+
+.h1{
+  color: rgba(138,75,56,255);
+}
+.text:hover{ 
+  color: black;
+}
+.text{ 
+  color: gray;
+}
+.btn{
+  
+  background-color:white; 
+  color:rgba(138,75,56,255); 
+  border-color:rgba(138,75,56,255) 
+}
+
+.btn:hover{
+  background-color:rgba(138,75,56,255); 
+  color:White; 
+  border-color:rgba(138,75,56,255) 
+}
+
+.facebook{
+  
+  background-color:white; 
+  color:blue ;
+  border-color:blue;
+}
+
+.facebook:hover{
+  background-color:blue;
+  color:White; 
+  border-color:blue;
+}
+
+.google{
+  
+  background-color:white; 
+  color:red ;
+  border-color:red;
+}
+
+.google:hover{
+  background-color:red;
+  color:White; 
+  border-color:red;
+}
+
+/* Category Card */
+.category__link {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: 250ms all;
+}
+
+
+
+.category__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 10px;
+
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.category__img--large {
+  height: 330px;
+}
+
+.category__img img {
+  width: 100%;
+ 
+}

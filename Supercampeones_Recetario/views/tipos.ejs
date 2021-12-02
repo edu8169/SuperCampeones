@@ -1,0 +1,35 @@
+<div> <img src="https://iteso01-my.sharepoint.com/personal/is721596_iteso_mx/Documents/DASW/Captura.PNG" width="100%" height="automatic" alt="Carne" loading="lazy"> </div>
+
+
+<div style="color:white">
+<%- JSON.stringify(tipoById) %> </div>
+<h1 class="pb-4" style = "color: rgba(138,75,56,255)" ><%= tipoById[0].tipo %></h1>
+<hr>
+<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mb-4">
+  <% if(typeof tipos !== 'undefined' && tipos.length > 0) { %>
+    <% tipos.forEach(function(tipo, index) { %>
+      <a href="/tipos/<%- tipo.nombre %>" class="col text-center category__link">
+        <div class="category__img shadow">
+          <img src="<%- tipo.imagen %>" alt="<%- tipo.nombre %>" loading="lazy">
+        </div>
+        <div class="text"><%- tipo.nombre %></div>
+      </a>
+    <% }) %>
+  <% } %>
+</div>
+
+
+<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+  <% if(typeof tipoById !== 'undefined' && tipoById.length > 0) { %>
+    <% tipoById.forEach(function(recipe, index){ %>
+    <a href="/recipe/<%= recipe._id %>" class="col text-center category__link">
+      <div class="category__img category__img--large shadow">
+        <img src="<%= recipe.imagen %>" alt="<%= recipe.nombre %>" loading="lazy">
+      </div>
+      <div class="text"><%= recipe.nombre %></div>
+    </a>
+    <% }) %>
+  <% } else { %>
+  
+  <% } %>
+</div>

@@ -1,0 +1,45 @@
+
+
+<div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-4">
+
+
+  <% if(tipos != '') { %>
+    <% tipos.forEach(function(tipo, index) { %>
+      <a href="/tipos/<%- tipo.nombre %>" class="col text-center category__link">
+        <div class="category__img ">
+          <img src="<%- tipo.imagen %>" alt="<%- tipo.nombre %>" loading="lazy">
+        </div>
+        <div class="pt-1"><%- tipo.nombre %></div>
+      </a>
+    <% }) %>
+  <% } %>
+      
+  <a href="/tipos/Carne" class="col text-center category__link">
+    <div class="category__img ">
+      <img src="https://cdn2.cocinadelirante.com/sites/default/files/images/2019/04/como-sauvizar-carnes.jpg" alt="Carne" loading="lazy">
+    </div>
+    <div class="text">Carne</div>
+  </a>
+
+  <a href="/tipos/Mariscos" class="col text-center category__link">
+    <div class="category__img">
+      <img src="https://lossaboresdemexico.com/wp-content/uploads/2016/10/Pescados-y-mariscos-Co%CC%81mo-seleccionarlos-y-servirlos-de-manera-segura-4.jpg" alt="Mariscos" loading="lazy">
+    </div>
+    <div class="text">Mariscos</div>
+  </a>
+
+  <a href="/tipos/Saludable" class="col text-center category__link">
+    <div class="category__img ">
+      <img src="https://www.bbva.ch/wp-content/uploads/2018/12/VIDA_SALUDABLE_20180119.jpg" alt="Saludable" loading="lazy">
+    </div>
+    <div class="text">Saludable</div>
+  </a>
+
+  <a href="/tipos/Vegetariano" class="col text-center category__link">
+    <div class="category__img ">
+      <img src="https://www.belmonteclinicadental.com/wp-content/uploads/2019/06/iStock-812997516.jpg" alt="Vegetariano" loading="lazy">
+    </div>
+    <div class="text">Vegetariano</div>
+  </a>
+
+</div>
